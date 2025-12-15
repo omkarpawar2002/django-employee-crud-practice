@@ -31,24 +31,24 @@ A simple **Employee Management System** built with **Django** that supports:
 ## 📸 Project Screenshots
 
 ### Login Page
-![Login Page](screenshot/Sign_IN.png)
+![Login Page](screenshots/Sign_IN.png)
 
 ### Register Page
-![Register Page](screenshot/Register.png)
+![Register Page](screenshots/Register.png)
 
 ### Add Employee
-![Add Employee Form](screenshot/Add_Employee_Part_1.png)
-![Add Employee Success](screenshot/Add_Employee_Part_2.png)
+![Add Employee Form](screenshots/Add_Employee_Part_1.png)
+![Add Employee Success](screenshots/Add_Employee_Part_2.png)
 
 ### Employee List
-![Employee List](screenshot/Show_Employee.png)
+![Employee List](screenshots/Show_Employee.png)
 
 ### Update Employee
-![Update Employee Form](screenshot/Update_Employee_Part_1.png)
-![Update Employee Success](screenshot/Update_Employee_Part_2.png)
+![Update Employee Form](screenshots/Update_Employee_Part_1.png)
+![Update Employee Success](screenshots/Update_Employee_Part_2.png)
 
 ### Delete Employee
-![Delete Employee](screenshot/Delete_Employee.png)
+![Delete Employee](screenshots/Delete_Employee.png)
 
 ---
 
