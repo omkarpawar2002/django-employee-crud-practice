@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>SHOW EMPLOYEE</title>
+{% endblock %}
+
+{% block content %}
+<table class="table table-secondary table-striped">
+    <thead>
+        <tr>
+            <th>EMPLOYEE ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>GENDER</th>
+            <th>MOBILE NO</th>
+            <th>DOB</th>
+            <th>CITY</th>
+            <th>ADDRESS</th>
+            <th>DEPARTMENT</th>
+            <th>SALARY</th>
+            <th>EMAIL ID</th>
+            <th>PASSWORD</th>
+            <th>ELIGIBILITY</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{record.emp_id}}</td>
+            <td>{{record.first_name}}</td>
+            <td>{{record.last_name}}</td>
+            <td>{{record.gender}}</td>
+            <td>{{record.mobile}}</td>
+            <td>{{record.dob}}</td>
+            <td>{{record.city}}</td>
+            <td>{{record.address}}</td>
+            <td>{{record.dept}}</td>
+            <td>{{record.sal}}</td>
+            <td>{{record.email}}</td>
+            <td>{{record.password}}</td>
+            <td>{{record.eligible}}</td>
+            <td>
+                <a href="{% url 'Update_Employee_View' record.emp_id %}"><button type="button" class="btn btn-dark btn-large me-2">UPDATE</button></a>
+                <a href="{% url 'Delete_Employee_View' record.emp_id %}"><button type="button" class="btn btn-dark btn-large me-2">DELETE</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
